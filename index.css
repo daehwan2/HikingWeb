@@ -46,7 +46,7 @@ table {
 
 /*  */
 .container,.firstSection{
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /* header */
@@ -72,7 +72,6 @@ header nav{
 header nav ul{
     display: flex;
     font-family: 'Open Sans', sans-serif;
-    margin-right: 3rem;
     font-weight:700;
 }
 header nav ul li{
@@ -114,10 +113,10 @@ section{
     top: 0px; */
     /* background-image: url('./images/ShapeP1.gif'); */
     background-image: url('./images/Place-Your-Image-Here-\(Double-Click-to-Edit\)132.gif');
-    background-size:contain;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    max-height: 800px;
     display: flex;
     font-family: 'Open Sans', sans-serif;
 }
@@ -131,7 +130,7 @@ section{
     justify-content: center;
 }
 .firstSection article header{
-    margin: 0 auto;    
+    margin: 150px auto;    
     background-color: rgba(0,0,0,0);
     display: flex;
     flex-direction: column;
@@ -174,7 +173,7 @@ section{
     top: 90vh;
      */
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
+    margin: 150px auto;
 }
 .secondSection > h1{
     font-weight: 800;
@@ -235,7 +234,6 @@ section{
 
 .thirdSection .imageAndContent{
     display: flex;
-    height: 60vh;
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
@@ -246,10 +244,11 @@ section{
     background-color: #deb37e;
 }
 .thirdSection .imageAndContent img{
-    flex: 1;
+    width: 50%;
+    object-fit: cover;
 }
 .thirdSection .imageAndContent .content{
-    flex: 1;
+    width: 50%;
 
 }
 .thirdSection .imageAndContent .content .title{
@@ -288,15 +287,13 @@ section{
 }
 /* 4 */
 .fourthSection{
-    background-color: #99928d;
-    height: 60vh;
-}
-.fourthSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #99928d;
 }
 .fourthSection .title{
+    margin-top: 150px;
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
@@ -309,20 +306,21 @@ section{
     text-align: center;
     color: #dbdbdb;
     line-height: 120%;
+    margin-bottom: 150px;
 }
 /* 5 */
 .fifthSection{
-    height: 70vh;
     display: flex;
     background-image: url('./images/Place-Your-Design-Here-\(Double-Click-to-Edit\)14.gif');
     background-size: cover;
     background-position: center;
+    height: 500px;
 }
 .fifthSection .temp{
-    flex: 1;
+    width: 50%;
 }
 .fifthSection .content{
-    flex: 1;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
