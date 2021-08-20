@@ -1,0 +1,492 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  */
+.container,.firstSection{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* header */
+a{
+    text-decoration: none;
+    color: black;
+}
+.container > header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+header .logo{
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 3rem;
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 3rem;
+    font-weight:700;
+}
+header nav ul li{
+    margin: auto 1rem;
+    font-size: 0.8rem;
+}
+header nav .search{
+    background-color: rgb(195,191,188);
+    border-radius: 25%;
+    width: 8rem;
+    height: 1.8rem;
+    margin-right: 3rem;
+    padding-left: 0.4rem;
+    padding-top: 0.5rem;
+    padding-right: 0.6rem;
+    margin: auto auto;
+}
+header nav .search input{
+    background-color: rgba(0,0,0,0);
+    width: 5.5rem;
+    height: 1.70rem;
+    float: left;
+    border: none;
+    outline: none;
+}
+header nav .search img{
+    float: right;
+    width: 1.2rem;
+    height: 1.2rem;
+
+}
+section{
+    font-family: 'Open Sans', sans-serif;
+}
+/* 1section */
+.firstSection{
+    /* position: absolute;
+    z-index: -1;
+    top: 0px; */
+    /* background-image: url('./images/ShapeP1.gif'); */
+    background-image: url('./images/Place-Your-Image-Here-\(Double-Click-to-Edit\)132.gif');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+.firstSection .temp{
+    flex: 1;
+}
+.firstSection>article{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.firstSection article header{
+    margin: 0 auto;    
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+}
+.firstSection article header .maintitle{
+    font-size: 3rem;
+    color: rgb(222,179,126);
+    text-shadow: 2px -2px 2px rgb(206,203,200);
+    font-weight: 800;
+}
+.firstSection article header .subtitle{
+    margin-top: 1rem;
+    color: #868380;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+.firstSection article header a{
+    margin-top: 2rem;
+    background-color: #fefdfd;
+    width: 7rem;
+    height: 1.8rem;
+    border-radius: 30%;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 0.6rem;
+    color: #776c64;
+}
+.firstSection article header p{
+    margin-top: 1rem;
+    font-style: italic;
+    color: #54524f;
+}
+
+/* 2 */
+.secondSection{
+    /* position: relative;
+    top: 90vh;
+     */
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+.secondSection > h1{
+    font-weight: 800;
+    font-size: 2.8rem;
+    color: rgb(222,179,126);
+    text-align: center;
+    
+}
+.secondSection>p{
+    font-style: italic;
+    color: #54524f;
+    text-align: center;
+    margin: 2.3rem 0;
+}
+.secondSection .articleContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 440px;
+}
+.secondSection .articleContainer article{
+    width: 260px;
+    height: 100%;
+    background-color: #7f7770;
+    
+}
+.secondSection .articleContainer article img{
+    width: 260px;
+    height: 52%;
+    object-fit: cover;
+}
+.secondSection .articleContainer article>.content{
+    padding-left: 0.7rem;
+    height: 48%;
+}
+.secondSection .articleContainer article .content>.title{
+    font-weight: bold;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+.secondSection .articleContainer article .content>.sub{
+    color: #c9c8c7;
+}
+.secondSection .showmore{
+    text-align:center;
+    margin-top: 3rem;
+}
+.secondSection .showmore>a{
+    background-color: #7f7770;
+    border-radius: 30%;
+    font-weight: bold;
+    color: white;
+    padding: 1rem 5rem;
+}
+
+/* 3 */
+
+.thirdSection .imageAndContent{
+    display: flex;
+    height: 60vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.thirdSection .imageAndContent:nth-child(1){
+    background-color:#7f7770;
+}
+.thirdSection .imageAndContent:nth-child(2){
+    background-color: #deb37e;
+}
+.thirdSection .imageAndContent img{
+    flex: 1;
+}
+.thirdSection .imageAndContent .content{
+    flex: 1;
+
+}
+.thirdSection .imageAndContent .content .title{
+    font-weight: bold;
+    font-size: 2rem;
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 2rem;
+}
+
+.thirdSection .imageAndContent .content p{
+    width: 80%;
+    margin: auto;
+}
+.thirdSection .imageAndContent .content p:nth-child(1){
+    color: #c9c8c7;
+}
+
+.thirdSection .imageAndContent .content p:nth-child(2){
+    color: white;
+}
+.thirdSection .imageAndContent .content .readMore{
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.thirdSection .imageAndContent .content .readMore>a{
+    background-color: #e2a355;
+    border-radius: 30%;
+    font-weight: bold;
+    color: white;
+    padding: 1rem 5rem;
+}
+/* 4 */
+.fourthSection{
+    background-color: #99928d;
+    height: 60vh;
+}
+.fourthSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fourthSection .title{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+.fourthSection p{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #dbdbdb;
+    line-height: 120%;
+}
+/* 5 */
+.fifthSection{
+    height: 70vh;
+    display: flex;
+    background-image: url('./images/Place-Your-Design-Here-\(Double-Click-to-Edit\)14.gif');
+    background-size: cover;
+    background-position: center;
+}
+.fifthSection .temp{
+    flex: 1;
+}
+.fifthSection .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fifthSection .content .title{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-shadow: 2px -2px 2px rgb(206,203,200);
+    
+}
+.fifthSection .content .title .title1{
+    color: #deb37e;
+}
+.fifthSection .content .title .title2{
+    color: #54524f;
+}
+/* 6 */
+.sixthSection{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.sixthSection .articles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+.sixthSection .articles article{
+    width: 240px;
+}
+.sixthSection .articles article .title{
+    color: #deb37e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.sixthSection .artciles article .content{
+    color:#3f3f3f;
+}
+.sixthSection .imageAndContent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+.sixthSection .imageAndContent .imagetext{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.sixthSection .imageAndContent .mainContent{
+    color: #3f3f3f;
+    margin-bottom: 1rem;
+}
+
+/* 7 */
+.seventhSection{
+    height: 60vh;
+    background-color: #deb37e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seventhSection>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.seventhSection .title{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.seventhSection article p{
+    margin-bottom: 2rem;
+}
+.seventhSection article form{
+    width: 80%;
+}
+.seventhSection article form input{
+    border: none;
+    outline: none;
+    width: 90%;
+    border-radius: 30%;
+    padding: 0.8rem 1rem;
+}
+.seventhSection article form button{
+    float: right;
+    position: relative;
+    width: 25%;
+    height: 2.8rem;
+    top: -2.7rem;
+    right: 0;
+    border-radius: 30%;
+    background-color: #54524f;
+    color: white;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+}
+/* 8 */
+.eighthSection{
+    background: #7f7770;
+    height: 60vh;
+    color: white;
+    display: flex;
+}
+.eighthSection .article1{
+    margin-top: 20%;
+    flex: 1;
+    
+}
+.eighthSection .article1 article{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+.eighthSection .article1 article .title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.eighthSection .article1 article p{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+.eighthSection .article1 article ul{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.eighthSection .article1 article ul li{
+    margin-right: 1rem;
+}
+
+.eighthSection .article1 article ul li img{
+    width: 2rem;
+    height: 2rem;
+}
+.eighthSection .articles{
+    flex: 1;
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.eighthSection .articles .title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.eighthSection .articles ul li{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
